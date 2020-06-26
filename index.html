@@ -2,25 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<meta charset="UTF-8" />
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dharaneeshwar - daranip</title>
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+	<!-- style -->
+	<link rel="stylesheet" href="landing.css" />
+	<title>Dharaneeshwar</title>
 </head>
 
-<body>
-    <b><p class="text-center">This page belongs to Dharaneeshwar.</p></b>
-    
+<body class="bg-light" style="padding: 0%;">
+
+		<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<!--<i class="fab fa-dyalog"></i>--><b style="font-size: 27px; font-family: 'Pacifico', cursive;">
+					Daranip</b></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+				aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse bg-light" id="navbarTogglerDemo02">
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0 bg-light" style="margin-right: 20px;">
+					<li class="nav-item active" style="font-size: 20px;">
+						<a class="nav-link text-daek" href=""><b>Home</b></a>
+					</li>
+					<li class="nav-item" style="font-size: 20px;">
+						<a class="nav-link" href="">Resume</a>
+					</li>
+					<li class="nav-item" style="font-size: 20px;">
+						<a class="nav-link" href="">Projects</a>
+					</li>
+				</ul>
+				<button class="btn btn-outline-info rounded-pill btn-lg" style="margin-left: 5px; margin-right: 5px;">
+					<i class="fas fa-id-badge"></i> Contact
+				</button>
+			</div>
+		</nav>
+
+		<!-- below nav -->
+		<section id="hero" class="d-flex align-items-center">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-lg-6 mx-auto pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+						<p style="
+                  font-size: 40px;
+                  margin-bottom: 15px;
+                  font-family: 'Fredoka One', cursive;
+                ">
+							I am <span class="text-info">Dharaneeshwar.</span>
+						</p>
+						<h4 class="text-muted">
+							Pursuing Engineering in Computer Science.<br /><br />Android |
+							Web-App | Photography
+						</h4>
+						<div class="d-flex mx-auto" style="margin-top: 60px; font-size: 30px;">
+							<a href=""><i class="fab fa-linkedin text-muted h-ani" style="margin-right: 10px;"></i></a>
+							<a href=""><i class="fab fa-github text-muted h-ani"
+									style="margin-left: 10px; margin-right: 10px;"></i></a>
+							<a href=""><i class="fab fa-instagram text-muted h-ani"
+									style="margin-left: 7px; margin-right: 10px;"></i></a>
+							<a href=""><i class="fab fa-twitter text-muted h-ani" style="margin-left: 10px;"></i></a>
+						</div>
+					</div>
+					<div class="col-lg-5 order-1 order-lg-2 hero-img">
+						<img src="/headshot.jpg" class="img-fluid animated" style="border-radius: 150px 25px 15px 5px;"
+							alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Hero -->
+	<!-- footer -->
+	<div class="bg-dark" style="height: 100px; margin-top: 70px;"></div>
 </body>
 
 </html>
