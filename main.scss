@@ -1,0 +1,12 @@
+$theme-colors: (
+  "primary": #0A79DF,
+  "info":#4BCFFA,
+  "royalyellow":#EA7773 ,
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body-scroll {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
