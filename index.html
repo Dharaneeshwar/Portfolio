@@ -36,7 +36,7 @@
 </head>
 
 <body class="body-scroll bg-light" style="padding: 0%;">
-	<nav  class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
 		<a class="navbar-brand" href="#">
 			<!--<i class="fab fa-dyalog"></i>--><b style="font-size: 27px; font-family: 'Pacifico', cursive;">
 				Daranip</b></a>
@@ -67,13 +67,15 @@
 	<section id="intro" class="d-flex align-items-center" style="margin-bottom: 40px;">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 mx-auto pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center" style="margin-top: 15px;">
+				<div class="col-lg-6 mx-auto pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
+					style="margin-top: 15px;">
 					<p style="
                   font-size: 35px;
                   margin-bottom: 15px;
                   font-family: 'Fredoka One', cursive;
                 ">
-						I am <a href="" class="typewrite" style="text-decoration: none; color: #0A79DF;" data-period=" 2000"
+						I am <a href="" class="typewrite" style="text-decoration: none; color: #0A79DF;"
+							data-period=" 2000"
 							data-type='[ "Dharaneeshwar.","a Software Developer.","a Freelancer." ]'>
 							<span class="wrap"></span>
 						</a>
@@ -103,7 +105,7 @@
 	<!-- resume -->
 	<section id="resume" style="margin-top: 100px;">
 		<div class="container-fluid">
-			<div class="row jumbotron bg-royalyellow" style="border-radius: 0%;">
+			<div class="row jumbotron bg-primary" style="border-radius: 0%;">
 				<div class="col-md-9 my-auto" style="padding-left: 20px;">
 					<h1 class="text-light" style="font-size:40px;">Resume</h1>
 					<h3 class="text-light" style="font-size: 20px;">
@@ -119,6 +121,27 @@
 			</div>
 		</div>
 	</section>
+	<!-- certificates -->
+	<section id="certificate" class="m-2 col-11 col-lg-10 mx-auto border border-primary p-4" style="border-radius: 10px;">
+		<ul class="nav nav-pills d-flex justify-content-center mx-auto" id="pills-tab" role="tablist">
+			<li class="nav-item" onclick="showcert()" role="presentation">
+				<a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-courses" role="tab"
+					aria-controls="pills-home" aria-selected="true">Courses</a>
+			</li>
+			<li class="nav-item" onclick="showcert()" role="presentation">
+				<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-achieve" role="tab"
+					aria-controls="pills-profile" aria-selected="false">Achievement</a>
+			</li>
+		</ul>
+		<div class="tab-content col-lg-5 mx-auto" id="pills-tabContent">
+			<div class="tab-pane fade show active" id="pills-courses" role="tabpanel" aria-labelledby="pills-courses-tab">
+				hey you
+			</div>
+			<div class="tab-pane fade" id="pills-achieve" role="tabpanel" aria-labelledby="pills-achieve-tab">
+				hey you there
+			</div>
+		</div>
+	</section>
 	<!-- footer -->
 	<div class="bg-dark" style="height: 100px; margin-top: 70px;"></div>
 
@@ -130,6 +153,8 @@
 
 
 	<!-- script -->
+	<script src="landing.js"></script>
+
 	<script>
 		var TxtType = function (el, toRotate, period) {
 			this.toRotate = toRotate;
