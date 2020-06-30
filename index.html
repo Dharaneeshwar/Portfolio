@@ -20,11 +20,10 @@
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-	<!-- style -->
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@700&display=swap"
+		rel="stylesheet"> <!-- style -->
 	<link rel="stylesheet" href="landing.css" />
 	<title>Dharaneeshwar</title>
 	<style>
@@ -54,10 +53,14 @@
 					<a class="nav-link" href="#resume">Resume</a>
 				</li>
 				<li class="nav-item" style="font-size: 20px;">
+					<a class="nav-link" href="#certificates">Certificates</a>
+				</li>
+				<li class="nav-item" style="font-size: 20px;">
 					<a class="nav-link" href="">Projects</a>
 				</li>
 			</ul>
-			<button class="btn btn-outline-primary rounded-pill btn-lg" style="margin-left: 5px; margin-right: 5px;">
+			<button class="btn btn-outline-primary rounded-pill btn-lg" style="margin-left: 5px; margin-right: 5px;"
+				onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#EA7773'">
 				<i class="fas fa-id-badge"></i> Contact
 			</button>
 		</div>
@@ -70,7 +73,7 @@
 				<div class="col-lg-6 mx-auto pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
 					style="margin-top: 15px;">
 					<p style="
-                  font-size: 35px;
+                  font-size: 33px;
                   margin-bottom: 15px;
                   font-family: 'Fredoka One', cursive;
                 ">
@@ -107,8 +110,8 @@
 		<div class="container-fluid">
 			<div class="row jumbotron bg-primary" style="border-radius: 0%;">
 				<div class="col-md-9 my-auto" style="padding-left: 20px;">
-					<h1 class="text-light" style="font-size:40px;">Resume</h1>
-					<h3 class="text-light" style="font-size: 20px;">
+					<h1 class="text-light" style="font-size:40px; font-family: 'Raleway', sans-serif;">Resume</h1>
+					<h3 class="text-light mb-3" style="font-size: 20px;">
 						Here is my latest resume online
 					</h3>
 				</div>
@@ -117,33 +120,109 @@
 						<button class="btn btn-outline-light btn-lg text-nowrap">
 							Show Resume
 						</button>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- certificates -->
-	<section id="certificate" class="m-2 col-11 col-lg-10 mx-auto border border-primary p-4" style="border-radius: 10px;">
-		<ul class="nav nav-pills d-flex justify-content-center mx-auto" id="pills-tab" role="tablist">
-			<li class="nav-item" onclick="showcert()" role="presentation">
-				<a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-courses" role="tab"
-					aria-controls="pills-home" aria-selected="true">Courses</a>
-			</li>
-			<li class="nav-item" onclick="showcert()" role="presentation">
-				<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-achieve" role="tab"
-					aria-controls="pills-profile" aria-selected="false">Achievement</a>
-			</li>
-		</ul>
-		<div class="tab-content col-lg-5 mx-auto" id="pills-tabContent">
-			<div class="tab-pane fade show active" id="pills-courses" role="tabpanel" aria-labelledby="pills-courses-tab">
-				hey you
-			</div>
-			<div class="tab-pane fade" id="pills-achieve" role="tabpanel" aria-labelledby="pills-achieve-tab">
-				hey you there
+	<section id="certificates">
+		<h1 id="certificate" class="ml-3 pl-4" style="padding-top: 100px;"
+			style="font-size:40px; color: black; font-family: 'Raleway', sans-serif;">Certificates and
+			Achievements</h1>
+		<div class="m-2 col-11 col-lg-10 mx-auto border border-primary p-4" style="border-radius: 10px;">
+
+			<ul class="nav nav-pills d-flex justify-content-center mx-auto mb-4" id="pills-tab" role="tablist">
+				<li class="nav-item" onclick="showcert()" role="presentation">
+					<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-courses" role="tab"
+						aria-controls="pills-home" aria-selected="true">Courses</a>
+				</li>
+				<li class="nav-item" onclick="showcert()" role="presentation">
+					<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-achieve" role="tab"
+						aria-controls="pills-profile" aria-selected="false">Achievement</a>
+				</li>
+			</ul>
+			<div class="tab-content col-lg-12 mx-auto" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-courses" role="tabpanel"
+					aria-labelledby="pills-courses-tab">
+					<div>
+						<div class="">
+							<div class="btn-group">
+								<button id="filter_head" type="button" class="btn btn-outline-success dropdown-toggle mb-3" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false">
+									All
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" onclick="certifilter('all',-1,1)">All</a>
+									<a class="dropdown-item" onclick="certifilter('course',-1,1)">Certification Courses</a>
+									<a class="dropdown-item" onclick="certifilter('complete',-1,1)">Completion Certificates</a>
+								</div>
+							</div>
+						</div>
+						<ul id="coursecerti" class="list-unstyled">
+							<!-- certificate injected by js -->
+						</ul>
+						<div id="viewmore_certi" class="w-100">
+							<button  class="d-flex mx-auto btn btn-outline-primary rounded-pill btn-lg text-nowrap px-5" onclick="certifilter('all',-1,-1)" onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#EA7773'">
+								View More
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-achieve" role="tabpanel" aria-labelledby="pills-achieve-tab">
+					hey you there
+				</div>
 			</div>
 		</div>
 	</section>
+
+
+	<!-- projects -->
+	<div class="m-3 p-4">
+		<h1 class="mb-4">Projects</h1>
+		<div class="row">
+			<div class="col-md-4 pr-3 border-right border-primary">
+				<div class="list-group" id="list-tab" role="tablist">
+					<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+						href="#list-home" role="tab" aria-controls="home">Accumulator</a>
+					<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+						href="#list-profile" role="tab" aria-controls="profile">certificate 2</a>
+					<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+						href="#list-messages" role="tab" aria-controls="messages">certificate 3</a>
+					<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+						href="#list-settings" role="tab" aria-controls="settings">certificate 4</a>
+				</div>
+			</div>
+			<div class="col-8">
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="list-home" role="tabpanel"
+						aria-labelledby="list-home-list">
+						<div class="container-fluid m-1">
+							<h1>Accumulator</h1>
+							<p>This project is based on web-scrapping and is capable of searching a key word online and
+								get top 9 results from web and shows in a nice template. It also has a custom version of
+								website without adverts in a nice looking template</p>
+							<div class="row d-flex mx-auto float-md-right m-0">
+								<button type="button" class="btn btn-outline-primary mb-3 mb-sm-0 text-nowrap"
+									onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#EA7773'"><i
+										class="fab fa-product-hunt"></i> Product</button>
+								<button type="button" class="btn btn-primary text-light ml-md-2 pr-sm-3 mb-3 mb-sm-0 text-nowrap"><i
+										class="fab fa-github"></i> Github</button>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...
+					</div>
+					<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+						...</div>
+					<div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+						...</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- footer -->
-	<div class="bg-dark" style="height: 100px; margin-top: 70px;"></div>
+	<div class="bg-dark" style="height: 100px; margin-top: 500px;"></div>
 
 
 
