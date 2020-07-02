@@ -6,7 +6,6 @@
 	<!-- CSS only -->
 	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" /> -->
-	<link rel="stylesheet" href="bootstrap.css">
 	<!-- JS, Popper.js, and jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -17,6 +16,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 		crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="bootstrap.css">
+	<!-- <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>	 -->
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -34,7 +35,7 @@
 	</style>
 </head>
 
-<body class="body-scroll bg-light" style="padding: 0%;">
+<body class="body-scroll bg-light" style="padding: 0%; position: relative;">
 	<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
 		<a class="navbar-brand" href="#">
 			<!--<i class="fab fa-dyalog"></i>--><b style="font-size: 27px; font-family: 'Pacifico', cursive;">
@@ -148,29 +149,45 @@
 					<div>
 						<div class="">
 							<div class="btn-group">
-								<button id="filter_head" type="button" class="btn btn-outline-success dropdown-toggle mb-3" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false">
+								<button id="filter_head" type="button"
+									class="btn btn-outline-success dropdown-toggle mb-3" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false" style="max-width: 400px;">
 									All
 								</button>
 								<div class="dropdown-menu">
 									<a class="dropdown-item" onclick="certifilter('all',-1,1)">All</a>
-									<a class="dropdown-item" onclick="certifilter('course',-1,1)">Certification Courses</a>
-									<a class="dropdown-item" onclick="certifilter('complete',-1,1)">Completion Certificates</a>
+									<a class="dropdown-item" onclick="certifilter('course',-1,1)">Certification
+										Courses</a>
+									<a class="dropdown-item" onclick="certifilter('complete',-1,1)">Completion
+										Certificates</a>
 								</div>
 							</div>
 						</div>
-						<ul id="coursecerti" class="list-unstyled">
-							<!-- certificate injected by js -->
+						<ul id="coursecerti" class="list-unstyled ">
+							<!-- certificates injected by js -->
 						</ul>
 						<div id="viewmore_certi" class="w-100">
-							<button  class="d-flex mx-auto btn btn-outline-primary rounded-pill btn-lg text-nowrap px-5" onclick="certifilter('all',-1,-1)" onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#EA7773'">
+							<button class="d-flex mx-auto btn btn-outline-primary rounded-pill btn-lg text-nowrap px-5"
+								onclick="certifilter('all',-1,-1)" onMouseOver="this.style.color='white'"
+								onMouseOut="this.style.color='#EA7773'">
 								View More
 							</button>
 						</div>
 					</div>
 				</div>
 				<div class="tab-pane fade" id="pills-achieve" role="tabpanel" aria-labelledby="pills-achieve-tab">
-					hey you there
+					<div>
+						<ul id="achievecerti" class="list-unstyled ">
+							<!-- certificates injected by js -->
+						</ul>
+						<div id="viewmore_achieve" class="w-100">
+							<button class="d-flex mx-auto btn btn-outline-primary rounded-pill btn-lg text-nowrap px-5"
+								onclick="certifilter('all',-1,-1)" onMouseOver="this.style.color='white'"
+								onMouseOut="this.style.color='#EA7773'">
+								View More
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -182,13 +199,15 @@
 		<h1 class="mb-4">Projects</h1>
 		<div class="row">
 			<div class="col-md-4 pr-3 border-right border-primary">
-				<div class="list-group" id="list-tab" role="tablist">
+				<div class="list-group" id="list-tab" role="tablist" style="height: 250PX; overflow: scroll;">
 					<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
 						href="#list-home" role="tab" aria-controls="home">Accumulator</a>
 					<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
 						href="#list-profile" role="tab" aria-controls="profile">certificate 2</a>
 					<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
 						href="#list-messages" role="tab" aria-controls="messages">certificate 3</a>
+					<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+						href="#list-settings" role="tab" aria-controls="settings">certificate 4</a>
 					<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
 						href="#list-settings" role="tab" aria-controls="settings">certificate 4</a>
 				</div>
@@ -206,7 +225,8 @@
 								<button type="button" class="btn btn-outline-primary mb-3 mb-sm-0 text-nowrap"
 									onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#EA7773'"><i
 										class="fab fa-product-hunt"></i> Product</button>
-								<button type="button" class="btn btn-primary text-light ml-md-2 pr-sm-3 mb-3 mb-sm-0 text-nowrap"><i
+								<button type="button"
+									class="btn btn-primary text-light ml-md-2 pr-sm-3 mb-3 mb-sm-0 text-nowrap"><i
 										class="fab fa-github"></i> Github</button>
 							</div>
 						</div>
@@ -221,8 +241,10 @@
 			</div>
 		</div>
 	</div>
+	<!-- projects -->
+	|<!-- <a href="documents/Joyofcomputingwithpython.jpg"></a> -->
 	<!-- footer -->
-	<div class="bg-dark" style="height: 100px; margin-top: 500px;"></div>
+	<div class="bg-dark" style="height: 100px; margin-top: 200px;"></div>
 
 
 
