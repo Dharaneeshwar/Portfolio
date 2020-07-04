@@ -102,7 +102,7 @@ certi_data = [
     content: "This is a Certification Course from NPTEL ( ELITE - Silver )",
     img_link: "tiny_image/joyofcomputingwithpython.jpg",
     document: "documents/Joyofcomputingwithpython.jpg",
-    type: "complete"
+    type: "course"
   }
 ];
 // -------------------------------------------------------------------------------

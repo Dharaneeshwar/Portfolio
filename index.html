@@ -16,7 +16,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 		crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="bootstrap.css">
 	<!-- <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>	 -->
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -24,7 +23,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@700&display=swap"
-		rel="stylesheet"> <!-- style -->
+		rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+		 <!-- style -->
 	<link rel="stylesheet" href="landing.css" />
 	<title>Dharaneeshwar</title>
 	<style>
@@ -79,11 +80,11 @@
                   font-family: 'Fredoka One', cursive;
                 ">
 						I am <a href="" class="typewrite" style="text-decoration: none; color: #0A79DF;"
-							data-period=" 2000"
+							data-period="1000"
 							data-type='[ "Dharaneeshwar.","a Software Developer.","a Freelancer." ]'>
 							<span class="wrap"></span>
 						</a>
-					</p>
+					</p>	
 					<h4 class="text-muted">
 						Pursuing Engineering in Computer Science.<br /><br />Android |
 						Web-App | Photography
@@ -111,7 +112,7 @@
 		<div class="container-fluid">
 			<div class="row jumbotron bg-primary" style="border-radius: 0%;">
 				<div class="col-md-9 my-auto" style="padding-left: 20px;">
-					<h1 class="text-light" style="font-size:40px; font-family: 'Raleway', sans-serif;">Resume</h1>
+					<h1 class="text-light" style="font-size:40px;font-family: 'Red Hat Display', sans-serif;">Resume</h1>
 					<h3 class="text-light mb-3" style="font-size: 20px;">
 						Here is my latest resume online
 					</h3>
@@ -129,8 +130,8 @@
 	<!-- certificates -->
 	<section id="certificates">
 		<h1 id="certificate" class="ml-3 pl-4" style="padding-top: 100px;"
-			style="font-size:40px; color: black; font-family: 'Raleway', sans-serif;">Certificates and
-			Achievements</h1>
+			style="font-size:40px; color: black;"><span style=" font-family: 'Red Hat Display', sans-serif;">Certificates and
+			Achievements</span></h1>
 		<div class="m-2 col-11 col-lg-10 mx-auto border border-primary p-4" style="border-radius: 10px;">
 
 			<ul class="nav nav-pills d-flex justify-content-center mx-auto mb-4" id="pills-tab" role="tablist">
@@ -194,55 +195,48 @@
 	</section>
 
 
+
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type='text/javascript'>
+    
+    $(function(){
+    
+        var iFrames = $('iframe');
+      
+    	function iResize() {
+    	
+    		for (var i = 0, j = iFrames.length; i < j; i++) {
+    		  iFrames[i].style.height = iFrames[i].contentWindow.document.body.offsetHeight + 'px';}
+    	    }
+    	    
+        	if ($.browser.safari || $.browser.opera) { 
+        	
+        	   iFrames.load(function(){
+        	       setTimeout(iResize, 0);
+               });
+            
+        	   for (var i = 0, j = iFrames.length; i < j; i++) {
+        			var iSource = iFrames[i].src;
+        			iFrames[i].src = '';
+        			iFrames[i].src = iSource;
+               }
+               
+        	} else {
+        	   iFrames.load(function() { 
+        	       this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+        	   });
+        	}
+        
+        });
+
+</script>
 	<!-- projects -->
 	<div class="m-3 p-4">
-		<h1 class="mb-4">Projects</h1>
-		<div class="row">
-			<div class="col-md-4 pr-3 border-right border-primary">
-				<div class="list-group" id="list-tab" role="tablist" style="height: 250PX; overflow: scroll;">
-					<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
-						href="#list-home" role="tab" aria-controls="home">Accumulator</a>
-					<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
-						href="#list-profile" role="tab" aria-controls="profile">certificate 2</a>
-					<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
-						href="#list-messages" role="tab" aria-controls="messages">certificate 3</a>
-					<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-						href="#list-settings" role="tab" aria-controls="settings">certificate 4</a>
-					<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-						href="#list-settings" role="tab" aria-controls="settings">certificate 4</a>
-				</div>
-			</div>
-			<div class="col-8">
-				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane fade show active" id="list-home" role="tabpanel"
-						aria-labelledby="list-home-list">
-						<div class="container-fluid m-1">
-							<h1>Accumulator</h1>
-							<p>This project is based on web-scrapping and is capable of searching a key word online and
-								get top 9 results from web and shows in a nice template. It also has a custom version of
-								website without adverts in a nice looking template</p>
-							<div class="row d-flex mx-auto float-md-right m-0">
-								<button type="button" class="btn btn-outline-primary mb-3 mb-sm-0 text-nowrap"
-									onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#EA7773'"><i
-										class="fab fa-product-hunt"></i> Product</button>
-								<button type="button"
-									class="btn btn-primary text-light ml-md-2 pr-sm-3 mb-3 mb-sm-0 text-nowrap"><i
-										class="fab fa-github"></i> Github</button>
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...
-					</div>
-					<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-						...</div>
-					<div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-						...</div>
-				</div>
-			</div>
-		</div>
+		<h1 class="mb-4"><span style="font-family: 'Red Hat Display', sans-serif;">My Projects</span></h1>
+		<iframe src="/projects.html" scrolling="no" width="100%" frameborder="0" style="overflow: hidden;"></iframe>
 	</div>
+
 	<!-- projects -->
-	|<!-- <a href="documents/Joyofcomputingwithpython.jpg"></a> -->
 	<!-- footer -->
 	<div class="bg-dark" style="height: 100px; margin-top: 200px;"></div>
 
