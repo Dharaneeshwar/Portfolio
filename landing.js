@@ -51,7 +51,7 @@ function acheiveenter(limit) {
 										<a href="${value.document}">
 										<button class="btn btn-outline-primary float-md-right text-nowrap mt-2 mb-2"
 											onMouseOver="this.style.color='white'"
-											onMouseOut="this.style.color='#EA7773'">
+											onMouseOut="this.style.color='#4776E6'">
 											Show Certificate
 										</button>
 										</a>
@@ -144,7 +144,7 @@ function certifilter(typee, limit, flag) {
 										<a href="${certi_data[value].document}">
 										<button class="btn btn-outline-primary float-md-right text-nowrap mt-2 mb-2"
 											onMouseOver="this.style.color='white'"
-											onMouseOut="this.style.color='#EA7773'">
+											onMouseOut="this.style.color='#4776E6'">
 											Show Certificate
 										</button>
 										</a>
