@@ -4,3 +4,28 @@
     background: linear-gradient(to left, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
+.iconhover {
+    color: #6c757d;
+    transition: transform .5s ease;
+}
+.iconhover:hover {
+    color: #4776E6;
+    transform: scale(1.2);
+    /* background-color: black; */
+} 
+ /* .hovercard {
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+.hovercard:hover{
+    transform: scale(1.03);
+}  */
+.imgbox{
+    overflow: hidden;
+}
+.imgbox img {
+    transition: transform .5s ease;
+}
+.imgbox:hover img{
+    transform: scale(1.1);
+}

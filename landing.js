@@ -6,12 +6,12 @@ certi_filter_types = {
   course: "Certification Courses",
   complete: "Completion Certificates",
 };
-function showcert() {
-  certi_data.style.display = "block";
-  pills_tab = document.getElementById("pills-tab");
-  pills_tab.className += " mb-4";
-  console.log("clicked");
-}
+// function showcert() {
+//   certi_data.style.display = "block";
+//   pills_tab = document.getElementById("pills-tab");
+//   pills_tab.className += " mb-4";
+//   console.log("clicked");
+// }
 type = "all";
 // ACHIEVE DATA ENTRY -------------------------------------------------------
 achieve_data = [
@@ -23,10 +23,12 @@ achieve_data = [
     type: "complete",
   },
 ];
+achieve_data.reverse();
 // --------------------------------------------------------------------------
 achievecerti = document.getElementById("achievecerti");
-acheiveenter(3);
-function acheiveenter(limit) {
+// achieveenter(3);
+function achieveenter(limit) {
+  achievecerti.innerHTML = "";
   for (value in achieve_data) {
     if (limit !== -1) {
       if (value >= limit) {
@@ -34,7 +36,7 @@ function acheiveenter(limit) {
       }
     }
     else{
-        document.getElementById("viewmore_certi").style.display = "none";
+        document.getElementById("viewmore_achieve").style.display = "none";
     }
     achievecerti.innerHTML += `<li class="media mb-4">
 								<div class="row mx-auto justify-content-center">
@@ -105,6 +107,7 @@ certi_data = [
     type: "course"
   }
 ];
+certi_data.reverse();
 // -------------------------------------------------------------------------------
 certifilter(type, 3, 1);
 coursecerti = document.getElementById("coursecerti");
@@ -183,3 +186,17 @@ function certifilter(typee, limit, flag) {
     }
   }
 }
+
+// counter number of times visited 
+
+$('.count').each(function () {
+  $(this).prop('Counter',0).animate({
+      Counter: $(this).text()
+  }, {
+      duration: 3000,
+      easing: 'swing',
+      step: function (now) {
+          $(this).text(Math.ceil(now));
+      }
+  });
+});

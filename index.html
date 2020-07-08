@@ -24,11 +24,15 @@
 	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@700&display=swap"
 		rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
-		 <!-- style -->
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+	<!-- style -->
 	<link rel="stylesheet" href="landing.css" />
 	<!-- custom style -->
-		<link rel="stylesheet" href="addons.css"/>
+	<link rel="stylesheet" href="addons.css" />
+	<!-- complete jquery -->
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<!-- tab image -->
+	<link rel="icon" href="./headshot.jpg">
 	<title>Dharaneeshwar</title>
 	<style>
 		html {
@@ -57,10 +61,10 @@
 					<a class="nav-link" href="#resume">Resume</a>
 				</li>
 				<li class="nav-item" style="font-size: 20px;">
-					<a class="nav-link" href="#certificates">Certificates</a>
-				</li>
+					<a class="nav-link" href="#projects">Projects</a>
+				</li> 
 				<li class="nav-item" style="font-size: 20px;">
-					<a class="nav-link" href="">Projects</a>
+					<a class="nav-link" href="#certificates">Certificates</a>
 				</li>
 			</ul>
 			<button class="btn btn-outline-primary rounded-pill btn-lg" style="margin-left: 5px; margin-right: 5px;"
@@ -82,22 +86,21 @@
                   font-family: 'Fredoka One', cursive;
                 ">
 						I am <a href="" class="typewrite" style="text-decoration: none; color: #0A79DF;"
-							data-period="1000"
-							data-type='[ "Dharaneeshwar.","a Software Developer.","a Freelancer." ]'>
+							data-period="1000" data-type='[ "Dharaneeshwar.","a Software Developer.","a Freelancer." ]'>
 							<span class="wrap"></span>
 						</a>
-					</p>	
+					</p>
 					<h4 class="text-muted">
 						Pursuing Engineering in Computer Science.<br /><br />Android |
 						Web-App | Photography
 					</h4>
 					<div class="d-flex mx-auto" style="margin-top: 60px; font-size: 30px;">
-						<a href=""><i class="fab fa-linkedin text-muted h-ani" style="margin-right: 10px;"></i></a>
-						<a href=""><i class="fab fa-github text-muted h-ani"
+						<a href=""><i class="fab fa-linkedin iconhover h-ani" style="margin-right: 10px;"></i></a>
+						<a href=""><i class="fab fa-github iconhover h-ani"
 								style="margin-left: 10px; margin-right: 10px;"></i></a>
-						<a href=""><i class="fab fa-instagram text-muted h-ani"
+						<a href=""><i class="fab fa-instagram iconhover h-ani"
 								style="margin-left: 7px; margin-right: 10px;"></i></a>
-						<a href=""><i class="fab fa-twitter text-muted h-ani" style="margin-left: 10px;"></i></a>
+						<a href=""><i class="fab fa-twitter iconhover h-ani" style="margin-left: 10px;"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-5 order-1 order-lg-2 hero-img">
@@ -112,14 +115,22 @@
 	<!-- resume -->
 	<section id="resume" style="margin-top: 100px;">
 		<div class="container-fluid">
-			<div class="row jumbotron backdropgrad" >
+			<div class="row jumbotron backdropgrad" style="border-radius: 0%;">
 				<div class="col-md-9 my-auto" style="padding-left: 20px;">
-					<h1 class="text-light" style="font-size:40px;font-family: 'Red Hat Display', sans-serif;">Resume</h1>
-					<h3 class="text-light mb-3" style="font-size: 20px;">
-						Here is my latest resume online
+					<!-- <h1 class="text-light" style="font-size:40px;font-family: 'Red Hat Display', sans-serif;">Resume</h1> -->
+					<h3 class="text-light mb-3" style="font-size: 40px; font-family: 'Red Hat Display', sans-serif;">
+						A Little about me
 					</h3>
+					<p class="text-white pr-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempore
+						dolore consequuntur deserunt quo ut hic quisquam at molestiae soluta, itaque placeat ullam
+						cupiditate, maxime esse atque fugiat sunt nisi.Nemo possimus impedit est ut vero molestiae
+						recusandae cumque dolor, numquam eos autem mollitia expedita ipsa officiis, fuga similique
+						voluptas in tempora ipsam illum. Perspiciatis illo ab dolor provident in!</p>
 				</div>
-				<div class="col-2 my-auto">
+				<div class="col-md-3 my-auto">
+					<h3 class="text-light mb-3" style="font-size: 15px;">
+						Here is my latest resume online.
+					</h3>
 					<a href="/documents/resume.pdf">
 						<button class="btn btn-outline-light btn-lg text-nowrap">
 							Show Resume
@@ -129,19 +140,113 @@
 			</div>
 		</div>
 	</section>
+	<div class="d-none d-md-flex" style="margin-top: 30px;">
+		<p class="mx-auto" style="font-size: 35px; font-family: 'Red Hat Display', sans-serif;"><span class="count mr-3" style="font-size: 35px; font-family: 'Fredoka One', cursive;
+			"> 1114 </span>  people visited this page.</p>
+	</div>
+	 <div class="d-flex d-md-none" style="margin-top: 30px;">
+		<p class="mx-auto" style="font-size: 15px; font-family: 'Red Hat Display', sans-serif;"><span class="count mr-3" style="font-size: 20px; font-family: 'Fredoka One', cursive;
+			"> 1114 </span>  people visited this page.</p>
+	</div> 
+	<!-- projects -->
+	<section id="projects">
+		<h1 id="certificate" class="ml-3 pl-4" style="padding-top: 70px;" style="font-size:40px; color: black;"><span
+				style=" font-family: 'Red Hat Display', sans-serif;">Projects</span><span
+				style="font-size: 10px; margin-left: 1rem;">That I'm Proud of.</span></h1>
+					<div class="d-flex justify-content-around flex-wrap">
+						<div class="card m-2 hovercard" style="width: 20rem;">
+							<div class="imgbox">
+								<img src="/tiny_image/intermediatepython.jpg" class="card-img-top" alt="...">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+									card's content.</p>
+								<div class="d-inline-flex"> 
+									<a href=""><i class="fab fa-github iconhover" style="font-size: 25px;"></i></a>
+									<a href=""><i class="fas fa-code iconhover ml-3" style="font-size: 25px;"></i></a>
+								</div>
+			
+							</div>
+						</div>
+						<div class="card m-2 hovercard" style="width: 20rem;">
+							<div class="imgbox">
+								<img src="/tiny_image/intermediatepython.jpg" class="card-img-top" alt="...">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+									card's content.</p>
+									<div class="d-inline-flex"> 
+										<a href=""><i class="fab fa-github iconhover" style="font-size: 25px;"></i></a>
+										<a href=""><i class="fab fa-google-play iconhover ml-3" style="font-size: 25px;"></i></a>
+									</div>			
+							</div>
+						</div>
+						<div class="card m-2 hovercard" style="width: 20rem;">
+							<div class="imgbox">
+								<img src="/tiny_image/intermediatepython.jpg" class="card-img-top" alt="...">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+									card's content.</p>
+								<a href="#" class="btn btn-secondary d-inline-flex">Go somewhere</a>
+			
+							</div>
+						</div>
+						<div class="card m-2 hovercard" style="width: 20rem;">
+							<div class="imgbox">
+								<img src="/tiny_image/intermediatepython.jpg" class="card-img-top" alt="...">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+									card's content.</p>
+								<a href="#" class="btn btn-secondary d-inline-flex">Go somewhere</a>
+			
+							</div>
+						</div>
+						<div class="card m-2 hovercard" style="width: 20rem;">
+							<div class="imgbox">
+								<img src="/tiny_image/intermediatepython.jpg" class="card-img-top" alt="...">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+									card's content.</p>
+								<a href="#" class="btn btn-secondary d-inline-flex">Go somewhere</a>
+			
+							</div>
+						</div>
+						<div class="card m-2 hovercard" style="width: 20rem;">
+							<div class="imgbox">
+								<img src="/tiny_image/intermediatepython.jpg" class="card-img-top" alt="...">
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+									card's content.</p>
+								<a href="#" class="btn btn-secondary d-inline-flex">Go somewhere</a>
+			
+							</div>
+						</div>
+					</div>
+							
+	</section>
 	<!-- certificates -->
 	<section id="certificates">
-		<h1 id="certificate" class="ml-3 pl-4" style="padding-top: 100px;"
-			style="font-size:40px; color: black;"><span style=" font-family: 'Red Hat Display', sans-serif;">Certificates and
-			Achievements</span></h1>
+		<h1 id="certificate" class="ml-3 pl-4" style="padding-top: 100px;" style="font-size:40px; color: black;"><span
+				style=" font-family: 'Red Hat Display', sans-serif;">Certificates and
+				Achievements</span></h1>
 		<div class="m-2 col-11 col-lg-10 mx-auto border border-primary p-4" style="border-radius: 10px;">
 
 			<ul class="nav nav-pills d-flex justify-content-center mx-auto mb-4" id="pills-tab" role="tablist">
-				<li class="nav-item" onclick="showcert()" role="presentation">
+				<li class="nav-item" onclick="" role="presentation">
 					<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-courses" role="tab"
 						aria-controls="pills-home" aria-selected="true">Courses</a>
 				</li>
-				<li class="nav-item" onclick="showcert()" role="presentation">
+				<li class="nav-item" onclick="achieveenter(3)" role="presentation">
 					<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-achieve" role="tab"
 						aria-controls="pills-profile" aria-selected="false">Achievement</a>
 				</li>
@@ -171,8 +276,8 @@
 						</ul>
 						<div id="viewmore_certi" class="w-100">
 							<button class="d-flex mx-auto btn btn-outline-primary rounded-pill btn-lg text-nowrap px-5"
-								onclick="certifilter('all',-1,-1)"
-								onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#4776E6'">
+								onclick="certifilter('all',-1,-1)" onMouseOver="this.style.color='white'"
+								onMouseOut="this.style.color='#4776E6'">
 								View More
 							</button>
 						</div>
@@ -185,7 +290,8 @@
 						</ul>
 						<div id="viewmore_achieve" class="w-100">
 							<button class="d-flex mx-auto btn btn-outline-primary rounded-pill btn-lg text-nowrap px-5"
-								onclick="certifilter('all',-1,-1)" onMouseOver="this.style.color='white'"
+								
+							onclick="achieveenter(-1)" onMouseOver="this.style.color='white'"
 								onMouseOut="this.style.color='#4776E6'">
 								View More
 							</button>
@@ -198,7 +304,7 @@
 
 
 
-	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+	<!--	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
 <script type='text/javascript'>
     
     $(function(){
@@ -232,11 +338,11 @@
         });
 
 </script>
-	<!-- projects -->
+
 	<div class="m-3 p-4">
 		<h1 class="mb-4"><span style="font-family: 'Red Hat Display', sans-serif;">My Projects</span></h1>
 		<iframe src="/projects.html" scrolling="no" width="100%" frameborder="0" style="overflow: hidden;"></iframe>
-	</div>
+	</div> -->
 
 	<!-- projects -->
 	<!-- footer -->
