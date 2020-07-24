@@ -10051,4 +10051,9 @@ body-scroll {
   overflow-y: scroll;
 }
 
+div {
+  margin: 0px;
+  padding: 0px;
+}
+
 /*# sourceMappingURL=landing.css.map */
