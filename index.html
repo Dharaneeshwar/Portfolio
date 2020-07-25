@@ -4,25 +4,36 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-	
-		<!-- google fonts -->
+
+	<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@700&display=swap"
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
-	
-	<!-- style -->
+
+	<!-- bootstrap style -->
 	<link rel="stylesheet" href="landing.css" />
-	
+
 	<!-- custom style -->
 	<link rel="stylesheet" href="addons.css" />
-	
+
 	<!-- complete jquery -->
 	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-	
+
 	<!-- alertify.js -->
 	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 	<!-- CSS -->
@@ -36,7 +47,10 @@
 
 	<!-- Scroll Magic -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-	
+
+	<!-- Animate css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
 	<!-- tab image -->
 	<link rel="icon" href="./headshot.jpg">
 	<title>Dharaneeshwar</title>
@@ -87,7 +101,7 @@
 			<div class="row">
 				<div class="col-lg-6 mx-auto pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
 					style="margin-top: 15px;">
-					<p style="
+					<p class="" style="
                   font-size: 33px;
                   margin-bottom: 15px;
                   font-family: 'Fredoka One', cursive;
@@ -159,10 +173,10 @@
 	</div>
 	<!-- projects -->
 	<section id="projects">
-		<h1 id="certificate" class="ml-3 pl-4" style="padding-top: 70px;" style="font-size:40px; color: black;"><span
+		<h1 id="project_title" class="ml-3 pl-4" style="padding-top: 70px;" style="font-size:40px; color: black;"><span
 				style=" font-family: 'Red Hat Display', sans-serif;">Projects</span><span
 				style="font-size: 10px; margin-left: 1rem;">That I'm Proud of.</span></h1>
-		<div class="d-flex justify-content-around flex-wrap">
+		<div id="project" class="d-flex justify-content-around flex-wrap">
 			<div class="card m-2 hovercard" style="width: 20rem;">
 				<div class="imgbox">
 					<img src="/tiny_image/intermediatepython.jpg" class="card-img-top" alt="...">
@@ -310,22 +324,22 @@
 				<div class="tab-pane fade show active" id="pills-courses" role="tabpanel"
 					aria-labelledby="pills-courses-tab">
 					<div>
-						<div class="">
-							<div class="btn-group">
-								<button id="filter_head" type="button"
-									class="btn btn-outline-success dropdown-toggle mb-3" data-toggle="dropdown"
-									aria-haspopup="true" aria-expanded="false" style="max-width: 400px;">
-									All
-								</button>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" onclick="certifilter('all',-1,1)">All</a>
-									<a class="dropdown-item" onclick="certifilter('course',-1,1)">Certification
-										Courses</a>
-									<a class="dropdown-item" onclick="certifilter('complete',-1,1)">Completion
-										Certificates</a>
-								</div>
+
+						<div class="btn-group">
+							<button id="filter_head" type="button" class="btn btn-outline-success dropdown-toggle mb-3"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+								style="max-width: 400px;">
+								All
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" onclick="certifilter('all',-1,1)">All</a>
+								<a class="dropdown-item" onclick="certifilter('course',-1,1)">Certification
+									Courses</a>
+								<a class="dropdown-item" onclick="certifilter('complete',-1,1)">Completion
+									Certificates</a>
 							</div>
 						</div>
+
 						<ul id="coursecerti" class="list-unstyled ">
 							<!-- certificates injected by js -->
 						</ul>
@@ -364,25 +378,25 @@
 			style="font-family: 'Red Hat Display', sans-serif; font-size: 50px;">Contact Me</h2>
 		<div class="row m-0">
 			<!-- ADD BLUE COLOURED SVG  -->
-		<div class="col-md-5 d-flex ml-5"><img class="d-none d-sm-block  bg-light align-items-center ml-2" src="/svg/contact.svg" alt="" width="100%"></div>	
-		<form id="my-form" action="https://formspree.io/xyynljnz" method="POST" class=" col-10 col-md-5 mx-auto" id="contact">
-			<div class="form-group">
-				<label
-					style="font-size: 15px; font-family: 'Red Hat Display', sans-serif;">Name</label>
-				<input type="text" class="form-control" name="name">
-				<label
-					style="font-size: 15px; font-family: 'Red Hat Display', sans-serif;">Email</label>
-				<input type="email" class="form-control" name="email" placeholder="name@example.com">
-			</div>
+			<div class="col-md-5 d-flex ml-5"><img class="d-none d-sm-block  bg-light align-items-center ml-2"
+					src="/svg/contact.svg" alt="" width="100%"></div>
+			<form id="my-form" action="https://formspree.io/xyynljnz" method="POST" class="col-10 col-md-5 mx-auto"
+				id="contact">
+				<div class="form-group">
+					<label style="font-size: 15px; font-family: 'Red Hat Display', sans-serif;">Name</label>
+					<input type="text" class="form-control" name="name">
+					<label style="font-size: 15px; font-family: 'Red Hat Display', sans-serif;">Email</label>
+					<input type="email" class="form-control" name="email" placeholder="name@example.com">
+				</div>
 
-			<div class="form-group">
-				<label for="exampleFormControlTextarea1"
-					style="font-size: 15px; font-family: 'Red Hat Display', sans-serif;">Message</label>
-				<textarea class="form-control" name="message" rows="3"></textarea>
-			</div>
-			<button id="my-form-button" class="btn btn-outline-primary mb-2"><i class="fas fa-paper-plane"
-					style="font-size: 20px; margin-right: 5px;"> </i> Send Message </button>
-		</form>
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1"
+						style="font-size: 15px; font-family: 'Red Hat Display', sans-serif;">Message</label>
+					<textarea class="form-control" name="message" rows="3"></textarea>
+				</div>
+				<button id="my-form-button" class="btn btn-outline-primary mb-2"><i class="fas fa-paper-plane"
+						style="font-size: 20px; margin-right: 5px;"> </i> Send Message </button>
+			</form>
 		</div>
 	</section>
 
