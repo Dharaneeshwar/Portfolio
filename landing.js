@@ -253,3 +253,59 @@ function ajax(method, url, data, success, error) {
   };
   xhr.send(data);
 }
+
+// scroll stuff 
+
+var scroll = window.requestAnimationFrame ||
+            function(callback){ window.setTimeout(callback, 1000/60)};
+
+var elementsToShow = document.querySelectorAll('.show-on-scroll');
+console.log(elementsToShow);
+
+function loop1() {
+
+  elementsToShow.forEach(function (element) {
+    if (isElementInViewport(element)) {
+      element.classList.add('animate__fadeInUp');
+    } else {
+      // element.classList.remove('animate__fadeInUp');
+    }
+  });
+
+  scroll(loop1);
+}
+loop1()
+
+var elementsToShowFromLeft = document.querySelectorAll('.show-on-scroll-left');
+console.log(elementsToShowFromLeft);
+function loop2() {
+
+  elementsToShowFromLeft.forEach(function (element) {
+    if (isElementInViewport(element)) {
+      element.classList.add('animate__fadeInLeft');
+    } else {
+      // element.classList.remove('animate__fadeInUp');
+    }
+  });
+
+  scroll(loop2);
+}
+loop2()
+
+function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
