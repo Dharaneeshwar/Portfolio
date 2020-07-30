@@ -30,14 +30,28 @@
     transform: scale(1.1);
 }
 
+.show-on-scroll{
+    opacity: 0;
+}
 /* animate css */
 
 .animate__fadeInUp{
     animation-delay: 0.5s;
     animation-duration: 1s;
+    opacity: 1;
 }
 
 .animate__fadeInLeft{
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+}
+
+.animate__fadeInUpBig{
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+
+.animate__fadeInRightBig{
     animation-delay: 0.5s;
     animation-duration: 1s;
 }
