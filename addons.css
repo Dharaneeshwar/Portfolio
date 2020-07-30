@@ -31,7 +31,6 @@
 }
 
 .show-on-scroll{
-    opacity: 0;
 }
 /* animate css */
 
@@ -42,7 +41,7 @@
 }
 
 .animate__fadeInLeft{
-    animation-delay: 0.5s;
+    animation-delay: 0s;
     animation-duration: 0.5s;
 }
 
