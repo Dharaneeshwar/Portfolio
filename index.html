@@ -2,24 +2,472 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dharaneeshwar - daranip</title>
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@700&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap" rel="stylesheet">
+
+	<!-- bootstrap style -->
+	<link rel="stylesheet" href="landing.css" />
+
+	<!-- custom style -->
+	<link rel="stylesheet" href="addons.css" />
+
+	<!-- complete jquery -->
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+	<!-- alertify.js -->
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+	<!-- Default theme -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+	<!-- Semantic UI theme -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+
+	<!-- Scroll Magic -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
+	<!-- Animate css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+	<!-- tab image -->
+	<link rel="icon" href="./headshot.jpg">
+	<title>Dharaneeshwar</title>
+	<style>
+		html {
+			scroll-behavior: smooth;
+			overflow-y: scroll;
+		}
+	</style>
 </head>
 
-<body>
-    <b><p class="text-center">This page belongs to Dharaneeshwar.</p></b>
+<body class="body-scroll bg-light" style="padding: 0%; position: relative;">
+	<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+			<b style="font-size: 27px; font-family: 'Pacifico', cursive;">
+				Daranip</b></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+			aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse bg-light" id="navbarTogglerDemo02">
+			<ul class="navbar-nav ml-auto mt-2 mt-lg-0 bg-light" style="margin-right: 20px;">
+				<li class="nav-item" style="font-size: 20px;">
+					<a class="nav-link text-dark" href="#intro"><b>Home</b></a>
+				</li>
+				<li class="nav-item" style="font-size: 20px;">
+					<a class="nav-link" href="#resume">Resume</a>
+				</li>
+				<li class="nav-item" style="font-size: 20px;">
+					<a class="nav-link" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item" style="font-size: 20px;">
+					<a class="nav-link" href="#certificates">Certificates</a>
+				</li>
+			</ul>
+			<a href="#contact">
+				<button class="btn btn-outline-primary rounded-pill btn-lg" style="margin-left: 5px; margin-right: 5px;"
+					onMouseOver="this.style.color='white'" onMouseOut="this.style.color='#4776E6'">
+					<i class="fas fa-id-badge"></i> Contact
+				</button></a>
+		</div>
+	</nav>
+
+	<!-- below nav -->
+	<section id="intro" class="d-flex align-items-center" style="margin-bottom: 40px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 mx-auto pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
+					style="margin-top: 15px;">
+					<p class="animate__animated animate__fadeInLeft" style="
+                  font-size: 33px;
+                  margin-bottom: 15px;
+                  font-family: 'Fredoka One', cursive;
+                ">
+						I am <a href="" class="typewrite" style="text-decoration: none; color: #0A79DF;"
+							data-period="1000" data-type='[ "Dharaneeshwar.","a Software Developer.","a Freelancer." ]'>
+							<span class="wrap"></span>
+						</a>
+					</p>
+					<h4 class="text-muted animate__animated animate__fadeInLeft">
+						Pursuing Engineering in Computer Science.<br /><br />Android |
+						Web-App | Photography
+					</h4>
+					<div class="d-flex mx-auto animate__animated animate__fadeInUpBig">
+						<div class="d-flex mx-auto animate__animated animate__pulse animate__infinite" x
+							style="margin-top: 60px; font-size: 30px;">
+							<a href="https://www.linkedin.com/in/daranip/" target="_blank"><i class="fab fa-linkedin iconhover h-ani" style="margin-right: 10px;"></i></a>
+							<a href="https://github.com/Dharaneeshwar" target="_blank"><i class="fab fa-github iconhover h-ani"
+									style="margin-left: 10px; margin-right: 10px;"></i></a>
+							<a href="https://www.instagram.com/darani.p/" target="_blank"><i class="fab fa-instagram iconhover h-ani"
+									style="margin-left: 7px; margin-right: 10px;"></i></a>
+							<a href="https://twitter.com/darani_p" target="_blank"><i class="fab fa-twitter iconhover h-ani" style="margin-left: 10px;"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 order-1 order-lg-2 hero-img">
+					<img src="/headshot.jpg" class="img-fluid animate__animated animate__fadeInRightBig"
+						style="border-radius: 150px 25px 15px 5px;" alt="" />
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End intro -->
+
+	<!-- resume -->
+	<section id="resume" style="margin-top: 100px;">
+		<div class="container-fluid">
+			<div class="row jumbotron backdropgrad" style="border-radius: 0%;">
+				<div class="col-md-9 my-auto" style="padding-left: 20px;">
+					<h3 class="text-light mb-3 show-on-scroll animate__animated "
+						style="font-size: 40px; font-family: 'Red Hat Display', sans-serif;">
+						A Little about me
+					</h3>
+					<p class="text-white pr-4 show-on-scroll animate__animated ">I am Dharaneeshwar, a student and a
+						software developer who can build Websites and Android apps. I do freelancing work for clients
+						and can work on a variety of tech stacks. <br> <br>
+						I have worked on multiple projects, both personal and with a group. I consider myself to be
+						an organised person when it comes to project management and team organisation. <br> I have experience
+						of driving people from "It's not for me" to "I just love it". <br> <br>
+						When it comes to my hobbies, I won't call myself a photographer, but saying I take good photos
+						would be a safe bet.
+					</p>
+				</div>
+				<div class="col-md-3 my-auto">
+					<h3 class="text-light mb-3" style="font-size: 15px;">
+						Here is my latest resume online.
+					</h3>
+					<a href="https://drive.google.com/file/d/1hH3IhzxagEeQbChDicERBgLiWcx4rvP4/view?usp=sharing"
+						target="_blank">
+						<button class="btn btn-outline-light btn-lg text-nowrap">
+							Show Resume
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <div class="d-none d-md-flex" style="margin-top: 30px;">
+		<p class="mx-auto" style="font-size: 35px; font-family: 'Red Hat Display', sans-serif;"><span class="count mr-3"
+				style="font-size: 35px; font-family: 'Fredoka One', cursive;
+			"> 1114 </span> people visited this page.</p>
+	</div>
+	<div class="d-flex d-md-none" style="margin-top: 30px;">
+		<p class="mx-auto" style="font-size: 15px; font-family: 'Red Hat Display', sans-serif;"><span class="count mr-3"
+				style="font-size: 20px; font-family: 'Fredoka One', cursive;
+			"> 1114 </span> people visited this page.</p>
+	</div> -->
+	<!-- projects -->
+	<section id="projects">
+		<h1 id="project_title" class="ml-3 pl-4 show-on-scroll animate__animated" style="padding-top: 70px;"
+			style="font-size:40px; color: black;"><span
+				style=" font-family: 'Red Hat Display', sans-serif;">Projects</span><span
+				style="font-size: 10px; margin-left: 1rem;">That I'm Proud of.</span></h1>
+		<div id="project" class="d-flex justify-content-around flex-wrap">
+			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+				<div class="imgbox">
+					<img src="/ProjectThumbnails/Top Nine.png" class="card-img-top" alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Top Nine</h5>
+					<p class="card-text">This project is based on web-scrapping and is capable of searching keywords online and can get the top 9 results from the web and shows them in a nice template. It also has a custom version of the website without adverts in a nice looking template.</p>
+					<div class="d-inline-flex">
+						<a href="https://github.com/Dharaneeshwar/TopNine"><i class="fab fa-github iconhover"
+								style="font-size: 25px;"></i></a>
+						<a href="https://topninearticles.herokuapp.com/"><i class="fas fa-code iconhover ml-3"
+								style="font-size: 25px;"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+				<div class="imgbox">
+					<img src="/ProjectThumbnails/Ur Converter.png" class="card-img-top" alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Ur Converter</h5>
+					<p class="card-text mb-5 mt-1">
+						This is a simple Android App that allows users to do conversions based on temperature, distance and time. This also has an intuitive UI that is easier to use for anyone.</p>
+					<div class="d-inline-flex mt-3">
+						<a href="https://github.com/Dharaneeshwar/Ur_Converter"><i class="fab fa-github iconhover"
+								style="font-size: 25px;"></i></a>
+						<a href=""><i class="fab fa-google-play iconhover ml-3" style="font-size: 25px;"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+				<div class="imgbox">
+					<img src="/ProjectThumbnails/Coming Soon.jpg" class="card-img-top" alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">The next Startup</h5>
+					<p class="card-text">This is an Android app that was built by having the real startup use-cases in mind. The project has an admin option to upload post to the feed and enabling replying to customer queries within the app. This also features a Profile page for individual customers.
+					</p>
+					<div class="d-inline-flex">
+						<a href=""><i class="fab fa-github iconhover" style="font-size: 25px;"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+				<div class="imgbox">
+					<img src="/ProjectThumbnails/Covid WEB.png" class="card-img-top" alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Covid-19 Hackathon (Web)</h5>
+					<p class="card-text">This is a Web app built for the Covid-19 National Bio-Informatics Online Hackathon for Full Stackers.</p>
+					<div class="d-inline-flex" style="margin-top: 85px;">
+						<a href=""><i class="fab fa-github iconhover" style="font-size: 25px;"></i></a>
+						<a href=""><i class="fas fa-code iconhover ml-3" style="font-size: 25px;"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+				<div class="imgbox">
+					<img src="/ProjectThumbnails/Covid App.png" class="card-img-top" alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Covid-19 Hackathon (App)</h5>
+					<p class="card-text">This is an Android app built for the Covid-19 National Bio-Informatics Online Hackathon for Full Stackers.</p>
+					<div class="d-inline-flex" style="margin-top: 85px;">
+						<a href=""><i class="fab fa-github iconhover" style="font-size: 25px;"></i></a>
+					</div><br>
+				</div>
+			</div>
+			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+				<div class="imgbox">
+					<img src="/ProjectThumbnails/Coming Soon.jpg" class="card-img-top" alt="...">
+				</div>
+				<div class="card-body">
+					<h5 class="card-title">Sorting Visualizer</h5>
+					<p class="card-text">This Web app can visually show the pattern of a variety of popular sorting algorithms. (Under production)</p>
+					<div class="d-inline-flex" style="margin-top: 85px;">
+						<a href=""><i class="fab fa-github iconhover" style="font-size: 25px;"></i></a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- coding -->
+	<section class="mt-5 pt-5">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 order-lg-2">
+					<div class="p-5">
+						<img class="img-fluid " src="./svg/coding.svg" alt="">
+					</div>
+				</div>
+				<div class="col-lg-6 order-lg-1">
+					<div class="p-5">
+						<h2 class="d-block d-sm-none mb-3 display-5 show-on-scroll animate__animated"
+							style="font-family: 'Red Hat Display', sans-serif;">Competitive Programming</h2>
+						<h2 class="d-none d-sm-block mb-5 display-4 show-on-scroll animate__animated"
+							style="font-family: 'Red Hat Display', sans-serif;">Competitive Programming</h2>
+						<p class="show-on-scroll animate__animated" style="font-size: 20px;"> I keep my Programming
+							skills fresh with a few online
+							platforms. Here are my profiles in <a
+								href="http://intern.skillrack.com/profile/227105/529d729f2bc5d2a2fc291b13709aad6333d26b62"
+								target="_blank" class="alert-link">Skillrack</a> and <a
+								href="https://leetcode.com/daranip/" target="_blank" class="alert-link">LeetCode</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- certificates -->
+	<section id="certificates">
+		<h1 id="certificate" class="ml-3 pl-4 mb-5" style="padding-top: 100px;" style="font-size:40px; color: black;">
+			<span style=" font-family: 'Red Hat Display', sans-serif;">Certificates and
+				Achievements</span></h1>
+		<div class="m-2 col-11 col-lg-10 mx-auto border border-primary p-4" style="border-radius: 10px;">
+
+			<ul class="nav nav-pills d-flex justify-content-center mx-auto mb-4" id="pills-tab" role="tablist">
+				<li class="nav-item" onclick="" role="presentation">
+					<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-courses" role="tab"
+						aria-controls="pills-home" aria-selected="true">Courses</a>
+				</li>
+				<li class="nav-item" onclick="achieveenter(3)" role="presentation">
+					<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-achieve" role="tab"
+						aria-controls="pills-profile" aria-selected="false">Achievement</a>
+				</li>
+			</ul>
+			<div class="tab-content col-lg-12 mx-auto" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-courses" role="tabpanel"
+					aria-labelledby="pills-courses-tab">
+					<div>
+
+						<div class="btn-group">
+							<button id="filter_head" type="button" class="btn btn-outline-success dropdown-toggle mb-3"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+								style="max-width: 400px;">
+								All
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" onclick="certifilter('all',-1,1)">All</a>
+								<a class="dropdown-item" onclick="certifilter('course',-1,1)">Certification
+									Courses</a>
+								<a class="dropdown-item" onclick="certifilter('complete',-1,1)">Completion
+									Certificates</a>
+							</div>
+						</div>
+
+						<ul id="coursecerti" class="list-unstyled ">
+							<!-- certificates injected by js -->
+						</ul>
+						<div id="viewmore_certi" class="w-100">
+							<button class="d-flex mx-auto btn btn-outline-primary rounded-pill btn-lg text-nowrap px-5"
+								onclick="certifilter('all',-1,-1)" onMouseOver="this.style.color='white'"
+								onMouseOut="this.style.color='#4776E6'">
+								View More
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-achieve" role="tabpanel" aria-labelledby="pills-achieve-tab">
+					<div>
+						<ul id="achievecerti" class="list-unstyled ">
+							<!-- certificates injected by js -->
+						</ul>
+						<div id="viewmore_achieve" class="w-100">
+							<button class="d-flex mx-auto btn btn-outline-primary rounded-pill btn-lg text-nowrap px-5"
+								onclick="achieveenter(-1)" onMouseOver="this.style.color='white'"
+								onMouseOut="this.style.color='#4776E6'">
+								View More
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- contact form -->
+	<section id="contact" class="mt-5 pt-5">
+		<h2 class="d-block d-sm-none display-5 mt-3 text-center show-on-scroll-left animate__animated"
+			style="font-family: 'Red Hat Display', sans-serif; font-size: 30px;">Contact Me</h2>
+		<h2 class="d-none d-sm-block mb-0 display-5 ml-5 pl-5 mt-3 show-on-scroll-left animate__animated"
+			style="font-family: 'Red Hat Display', sans-serif; font-size: 50px;">Contact Me</h2>
+		<div class="row m-0">
+			<!-- ADD BLUE COLOURED SVG  -->
+			<div class="col-md-5 d-flex ml-5"><img
+					class="d-none d-sm-block  bg-light align-items-center ml-2 show-on-scroll-left animate__animated"
+					src="/svg/contact.svg" alt="" width="100%"></div>
+			<form id="my-form" action="https://formspree.io/xyynljnz" method="POST" class="col-10 col-md-5 mx-auto"
+				id="contact">
+				<div class="form-group">
+					<label style="font-size: 15px; font-family: 'Red Hat Display', sans-serif;">Name</label>
+					<input type="text" class="form-control" name="name">
+					<label style="font-size: 15px; font-family: 'Red Hat Display', sans-serif;">Email</label>
+					<input type="email" class="form-control" name="email" placeholder="name@example.com">
+				</div>
+
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1"
+						style="font-size: 15px; font-family: 'Red Hat Display', sans-serif;">Message</label>
+					<textarea class="form-control" name="message" rows="3"></textarea>
+				</div>
+				<button id="my-form-button" class="btn btn-outline-primary mb-2"><i class="fas fa-paper-plane"
+						style="font-size: 20px; margin-right: 5px;"> </i> Send Message </button>
+			</form>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<div class="container-fluid bg-primary" style="padding: 10px; margin-top: 100px;">
+		<span class="d-flex justify-content-center text-light" style=" font-family: 'Red Hat Display', sans-serif;">Designed and Developed by Dharaneeshwar</span>
+	</div>
+
+	<!-- script -->
+	<script src="landing.js"></script>
+
+	<script>
+		var TxtType = function (el, toRotate, period) {
+			this.toRotate = toRotate;
+			this.el = el;
+			this.loopNum = 0;
+			this.period = parseInt(period, 10) || 2000;
+			this.txt = '';
+			this.tick();
+			this.isDeleting = false;
+		};
+
+		TxtType.prototype.tick = function () {
+			var i = this.loopNum % this.toRotate.length;
+			var fullTxt = this.toRotate[i];
+
+			if (this.isDeleting) {
+				this.txt = fullTxt.substring(0, this.txt.length - 1);
+			} else {
+				this.txt = fullTxt.substring(0, this.txt.length + 1);
+			}
+
+			this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+			var that = this;
+			var delta = 200 - Math.random() * 100;
+
+			if (this.isDeleting) { delta /= 2; }
+
+			if (!this.isDeleting && this.txt === fullTxt) {
+				delta = this.period;
+				this.isDeleting = true;
+			} else if (this.isDeleting && this.txt === '') {
+				this.isDeleting = false;
+				this.loopNum++;
+				delta = 500;
+			}
+
+			setTimeout(function () {
+				that.tick();
+			}, delta);
+		};
+
+		window.onload = function () {
+			var elements = document.getElementsByClassName('typewrite');
+			for (var i = 0; i < elements.length; i++) {
+				var toRotate = elements[i].getAttribute('data-type');
+				var period = elements[i].getAttribute('data-period');
+				if (toRotate) {
+					new TxtType(elements[i], JSON.parse(toRotate), period);
+				}
+			}
+			// INJECT CSS
+			var css = document.createElement("style");
+			css.type = "text/css";
+			css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+			document.body.appendChild(css);
+		};
+
+
+	</script>
 </body>
 
 </html>
