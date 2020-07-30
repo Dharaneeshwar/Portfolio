@@ -30,8 +30,6 @@
     transform: scale(1.1);
 }
 
-.show-on-scroll{
-}
 /* animate css */
 
 .animate__fadeInUp{
@@ -41,7 +39,7 @@
 }
 
 .animate__fadeInLeft{
-    animation-delay: 0s;
+    animation-delay: 0.25s;
     animation-duration: 0.5s;
 }
 
