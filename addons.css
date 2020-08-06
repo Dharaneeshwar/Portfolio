@@ -1,54 +1,63 @@
 .backdropgrad {
-    background: #4776E6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+  background: #4776e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #8e54e9,
+    #4776e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #8e54e9,
+    #4776e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .iconhover {
-    color: #6c757d;
-    transition: transform .5s ease;
+  color: #6c757d;
+  transition: transform 0.5s ease;
 }
 .iconhover:hover {
-    color: #4776E6;
-    transform: scale(1.2);
-    /* background-color: black; */
-} 
- /* .hovercard {
+  color: #4776e6;
+  transform: scale(1.2);
+  /* background-color: black; */
+}
+/* .hovercard {
     overflow: hidden;
     transition: transform .5s ease;
 }
 .hovercard:hover{
     transform: scale(1.03);
 }  */
-.imgbox{
-    overflow: hidden;
+.imgbox {
+  overflow: hidden;
 }
 .imgbox img {
-    transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
-.imgbox:hover img{
-    transform: scale(1.1);
+.imgbox:hover img {
+  transform: scale(1.1);
 }
 
 /* animate css */
 
-.animate__fadeInUp{
-    animation-delay: 0.5s;
-    animation-duration: 1s;
-    opacity: 1;
+.animate__fadeInUp {
+  animation-delay: 0s;
+  animation-duration: 2s;
+  opacity: 1;
 }
 
-.animate__fadeInLeft{
-    animation-delay: 0.25s;
-    animation-duration: 0.5s;
+.animate__fadeInLeft {
+  animation-delay: 0s;
+  animation-duration: 2s;
+  opacity: 1;
 }
 
-.animate__fadeInUpBig{
-    animation-delay: 0.5s;
-    animation-duration: 1s;
+.animate__fadeInUpBig {
+  animation-delay: 0.1s;
+  animation-duration: 1s;
+  opacity: 1;
 }
 
-.animate__fadeInRightBig{
-    animation-delay: 0.5s;
-    animation-duration: 1s;
+.animate__fadeInRightBig {
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
 }
