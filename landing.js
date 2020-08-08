@@ -1,3 +1,14 @@
+// AOS
+AOS.init({
+  offset: 100, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+});
+
 certi_data = document.getElementById("pills-tabContent");
 console.log("hi");
 // certi_data.style.display = "none";
@@ -310,60 +321,4 @@ function ajax(method, url, data, success, error) {
     }
   };
   xhr.send(data);
-}
-
-// scroll stuff 
-
-var scroll = window.requestAnimationFrame ||
-            function(callback){ window.setTimeout(callback, 1000/60)};
-
-var elementsToShow = document.querySelectorAll('.show-on-scroll');
-console.log(elementsToShow);
-
-function loop1() {
-
-  elementsToShow.forEach(function (element) {
-    if (isElementInViewport(element)) {
-      element.classList.add('animate__fadeInUp');
-    } else {
-      // element.classList.remove('animate__fadeInUp');
-    }
-  });
-
-  scroll(loop1);
-}
-loop1()
-
-var elementsToShowFromLeft = document.querySelectorAll('.show-on-scroll-left');
-console.log(elementsToShowFromLeft);
-function loop2() {
-
-  elementsToShowFromLeft.forEach(function (element) {
-    if (isElementInViewport(element)) {
-      element.classList.add('animate__fadeInLeft');
-    } else {
-      // element.classList.remove('animate__fadeInUp');
-    }
-  });
-
-  scroll(loop2);
-}
-loop2()
-
-function isElementInViewport(el) {
-  // special bonus for those using jQuery
-  if (typeof jQuery === "function" && el instanceof jQuery) {
-    el = el[0];
-  }
-  var rect = el.getBoundingClientRect();
-  return (
-    (rect.top <= 0
-      && rect.bottom >= 0)
-    ||
-    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-    ||
-    (rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-  );
 }
