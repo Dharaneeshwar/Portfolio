@@ -10,16 +10,8 @@
 	<meta name="author" content="Dharaneeshwar">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!-- JS, Popper.js, and jQuery -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-		crossorigin="anonymous"></script>
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -36,11 +28,6 @@
 	<!-- custom style -->
 	<link rel="stylesheet" href="addons.css" />
 
-	<!-- complete jquery -->
-	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-
-	<!-- alertify.js -->
-	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 	<!-- CSS -->
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
 	<!-- Default theme -->
@@ -49,12 +36,6 @@
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
 	<!-- Bootstrap theme -->
 	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
-
-	<!-- Scroll Magic -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-
-	<!-- Animate css -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
 	<!-- tab image -->
 	<link rel="icon" href="./headshot.jpg">
@@ -106,7 +87,8 @@
 			<div class="row">
 				<div class="col-lg-6 mx-auto pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
 					style="margin-top: 15px;">
-					<p class="animate__animated animate__fadeInLeft" style="
+					<p class="" data-aos="slide-right" data-aos-duration="4000" 
+					style="
                   font-size: 33px;
                   margin-bottom: 15px;
                   font-family: 'Fredoka One', cursive;
@@ -116,11 +98,11 @@
 							<span class="wrap"></span>
 						</a>
 					</p>
-					<h4 class="text-muted animate__animated animate__fadeInLeft">
+					<h4 class="text-muted" data-aos="slide-right" data-aos-duration="" >
 						Pursuing Engineering in Computer Science.<br /><br />Android |
 						Web-App | Photography
 					</h4>
-					<div class="d-flex mx-auto animate__animated animate__fadeInUpBig">
+					<div class="d-flex mx-auto " data-aos="zoom-in-up">
 						<div class="d-flex mx-auto animate__animated animate__pulse animate__infinite" x
 							style="margin-top: 60px; font-size: 30px;">
 							<a href="https://www.linkedin.com/in/daranip/" target="_blank"><i
@@ -137,7 +119,7 @@
 					</div>
 				</div>
 				<div class="col-lg-5 order-1 order-lg-2 hero-img">
-					<img src="/headshot.jpg" class="img-fluid animate__animated animate__fadeInRightBig"
+					<img src="/headshot.jpg" class="img-fluid" data-aos="fade-left"
 						style="border-radius: 150px 25px 15px 5px;" alt="" />
 				</div>
 			</div>
@@ -150,11 +132,11 @@
 		<div class="container-fluid">
 			<div class="row jumbotron backdropgrad" style="border-radius: 0%;">
 				<div class="col-md-9 my-auto" style="padding-left: 20px;">
-					<h3 class="text-light mb-3 show-on-scroll animate__animated "
+					<h3 class="text-light mb-3" data-aos="fade-up"
 						style="font-size: 40px; font-family: 'Red Hat Display', sans-serif;">
 						A Little about me
 					</h3>
-					<p class="text-white pr-4 show-on-scroll animate__animated ">I am Dharaneeshwar, a student and a
+					<p class="text-white pr-4 " data-aos="fade-up">I am Dharaneeshwar, a student and a
 						software developer who can build Websites and Android apps. I do freelancing work for clients
 						and can work on a variety of tech stacks. <br> <br>
 						I have worked on multiple projects, both personal and with a group. I consider myself to be
@@ -196,7 +178,7 @@
 				style=" font-family: 'Red Hat Display', sans-serif;">Projects</span><span
 				style="font-size: 10px; margin-left: 1rem;">That I'm Proud of.</span></h1>
 		<div id="project" class="d-flex justify-content-around flex-wrap">
-			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+			<div class="card m-2 hovercard" data-aos="fade-up" style="width: 20rem;">
 				<div class="imgbox">
 					<img src="/ProjectThumbnails/Top Nine.png" class="card-img-top" alt="...">
 				</div>
@@ -214,7 +196,7 @@
 
 				</div>
 			</div>
-			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+			<div class="card m-2 hovercard" data-aos="fade-up" style="width: 20rem;">
 				<div class="imgbox">
 					<img src="/ProjectThumbnails/Ur Converter.png" class="card-img-top" alt="...">
 				</div>
@@ -231,7 +213,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+			<div class="card m-2 hovercard" data-aos="fade-up" style="width: 20rem;">
 				<div class="imgbox">
 					<img src="/ProjectThumbnails/Coming Soon.jpg" class="card-img-top" alt="...">
 				</div>
@@ -248,7 +230,7 @@
 
 				</div>
 			</div>
-			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+			<div class="card m-2 hovercard" data-aos="fade-up" style="width: 20rem;">
 				<div class="imgbox">
 					<img src="/ProjectThumbnails/Covid WEB.png" class="card-img-top" alt="...">
 				</div>
@@ -265,7 +247,7 @@
 
 				</div>
 			</div>
-			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+			<div class="card m-2 hovercard" data-aos="fade-up" style="width: 20rem;">
 				<div class="imgbox">
 					<img src="/ProjectThumbnails/Covid App.png" class="card-img-top" alt="...">
 				</div>
@@ -279,7 +261,7 @@
 					</div><br>
 				</div>
 			</div>
-			<div class="card m-2 hovercard show-on-scroll animate__animated" style="width: 20rem;">
+			<div class="card m-2 hovercard" data-aos="fade-up" style="width: 20rem;">
 				<div class="imgbox">
 					<img src="/ProjectThumbnails/Coming Soon.jpg" class="card-img-top" alt="...">
 				</div>
@@ -308,11 +290,11 @@
 				</div>
 				<div class="col-lg-6 order-lg-1">
 					<div class="p-5">
-						<h2 class="d-block d-sm-none mb-3 display-5 show-on-scroll animate__animated"
+						<h2 class="d-block d-sm-none mb-3 display-5" data-aos="fade-up"
 							style="font-family: 'Red Hat Display', sans-serif;">Competitive Programming</h2>
-						<h2 class="d-none d-sm-block mb-5 display-4 show-on-scroll animate__animated"
+						<h2 class="d-none d-sm-block mb-5 display-4" data-aos="fade-up"
 							style="font-family: 'Red Hat Display', sans-serif;">Competitive Programming</h2>
-						<p class="show-on-scroll animate__animated" style="font-size: 20px;"> I keep my Programming
+						<p class="" data-aos="fade-up" style="font-size: 20px;"> I keep my Programming
 							skills fresh with a few online
 							platforms. Here are my profiles in <a
 								href="http://intern.skillrack.com/profile/227105/529d729f2bc5d2a2fc291b13709aad6333d26b62"
@@ -395,14 +377,14 @@
 
 	<!-- contact form -->
 	<section id="contact" class="mt-5 pt-5">
-		<h2 class="d-block d-sm-none display-5 mt-3 text-center show-on-scroll-left animate__animated"
+		<h2 class="d-block d-sm-none display-5 mt-3 text-center" data-aos="slide-right"
 			style="font-family: 'Red Hat Display', sans-serif; font-size: 30px;">Contact Me</h2>
-		<h2 class="d-none d-sm-block mb-0 display-5 ml-5 pl-5 mt-3 show-on-scroll-left animate__animated"
+		<h2 class="d-none d-sm-block mb-0 display-5 ml-5 pl-5 mt-3" data-aos="slide-right"
 			style="font-family: 'Red Hat Display', sans-serif; font-size: 50px;">Contact Me</h2>
 		<div class="row m-0">
 			<!-- ADD BLUE COLOURED SVG  -->
 			<div class="col-md-5 d-flex ml-5"><img
-					class="d-none d-sm-block  bg-light align-items-center ml-2 show-on-scroll-left animate__animated"
+					class="d-none d-sm-block  bg-light align-items-center ml-2" data-aos="slide-right"
 					src="/svg/contact.svg" alt="" width="100%"></div>
 			<form id="my-form" action="https://formspree.io/xyynljnz" method="POST" class="col-10 col-md-5 mx-auto"
 				id="contact">
@@ -430,8 +412,29 @@
 			style=" font-family: 'Red Hat Display', sans-serif;">Designed and Developed by Dharaneeshwar</span>
 	</div>
 
-	<!-- script -->
+	<!-- all scripts are here -->
+	
+	<!-- AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 	<script src="landing.js"></script>
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+
+	<!-- complete jquery -->
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+	<!-- alertify.js -->
+	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
 	<script>
 		var TxtType = function (el, toRotate, period) {
