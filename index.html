@@ -83,7 +83,7 @@
 
 	<!-- below nav -->
 	<section id="intro" class="d-flex align-items-center" style="margin-bottom: 40px;">
-		<div class="container">
+		<div class="container " style="margin-top: 40px;">
 			<div class="row">
 				<div class="col-lg-6 mx-auto pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
 					style="margin-top: 15px;">
@@ -129,8 +129,8 @@
 	<!-- resume -->
 	<section id="resume" style="margin-top: 100px;">
 		<div class="container-fluid">
-			<div class="row jumbotron backdropgrad" style="border-radius: 0%;">
-				<div class="col-md-9 my-auto" style="padding-left: 20px;">
+			<div class="row d-flex justify-content-around jumbotron backdropgrad" style="border-radius: 0%;">
+				<div class="col-md-9 col-lg-7 my-auto" style="padding-left: 20px;">
 					<h3 class="text-light mb-3" data-aos="fade-up"
 						style="font-size: 40px; font-family: 'Red Hat Display', sans-serif;">
 						A Little about me
@@ -152,7 +152,7 @@
 					</h3>
 					<a href="https://drive.google.com/file/d/162yT4MI8SMevyM58J7QjIf8aqbm4W0zQ/view?usp=sharing"
 						target="_blank">
-						<button class="btn btn-outline-light btn-lg text-nowrap">
+						<button class="btn btn-light btn-lg text-nowrap" >
 							Show Resume
 						</button>
 					</a>
@@ -171,7 +171,7 @@
 			"> 1114 </span> people visited this page.</p>
 	</div> -->
 	<!-- projects -->
-	<section id="projects" class="mt-4">
+	<section id="projects" class="container mt-4">
 		<h1 id="project_title" class="ml-3 pl-4 show-on-scroll animate__animated" style="padding-top: 70px;"
 			style="font-size:40px; color: black;"><span
 				style=" font-family: 'Red Hat Display', sans-serif;">Projects</span><span
@@ -229,54 +229,56 @@
 
 				</div>
 			</div>
+		</div>
+		<div id="project-row-2" class="d-flex justify-content-around flex-wrap">
 			<div class="card m-2 hovercard" data-aos="fade-up" style="width: 20rem;">
-				<div class="imgbox">
-					<img src="/ProjectThumbnails/Covid WEB.png" class="card-img-top" alt="...">
-				</div>
-				<div class="card-body">
-					<h5 class="card-title">Covid-19 Hackathon (Web)</h5>
-					<p class="card-text">This is a Web app built for the Covid-19 National Bio-Informatics Online
-						Hackathon for Full Stackers.</p>
-					<div class="d-inline-flex" style="margin-top: 85px;">
-						<a href="https://github.com/Dharaneeshwar/COVID19-Webapp-TN"><i class="fab fa-github iconhover"
-								style="font-size: 25px;"></i></a>
-						<a href="https://covid.daranip.com/" target="_blank"><i class="fas fa-link iconhover ml-3"
-								style="font-size: 25px;"></i></a>
-					</div>
-
-				</div>
+			<div class="imgbox">
+				<img src="/ProjectThumbnails/Covid WEB.png" class="card-img-top" alt="...">
 			</div>
-			<div class="card m-2 hovercard" data-aos="fade-up" style="width: 20rem;">
-				<div class="imgbox">
-					<img src="/ProjectThumbnails/Covid App.png" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Covid-19 Hackathon (Web)</h5>
+				<p class="card-text">This is a Web app built for the Covid-19 National Bio-Informatics Online
+					Hackathon for Full Stackers.</p>
+				<div class="d-inline-flex" style="margin-top: 85px;">
+					<a href="https://github.com/Dharaneeshwar/COVID19-Webapp-TN"><i class="fab fa-github iconhover"
+							style="font-size: 25px;"></i></a>
+					<a href="https://covid.daranip.com/" target="_blank"><i class="fas fa-link iconhover ml-3"
+							style="font-size: 25px;"></i></a>
 				</div>
-				<div class="card-body">
-					<h5 class="card-title">Covid-19 Hackathon (App)</h5>
-					<p class="card-text">This is an Android app built for the Covid-19 National Bio-Informatics Online
-						Hackathon for Full Stackers.</p>
-					<div class="d-inline-flex" style="margin-top: 85px;">
-						<a href="https://github.com/Covid19-project-hack/TN-COVID-19-Project"><i
-								class="fab fa-github iconhover" style="font-size: 25px;"></i></a>
-					</div><br>
-				</div>
-			</div>
-			<div class="card m-2 hovercard" data-aos="fade-up" style="width: 20rem;">
-				<div class="imgbox">
-					<img src="/ProjectThumbnails/Coming Soon.jpg" class="card-img-top" alt="...">
-				</div>
-				<div class="card-body">
-					<h5 class="card-title">Sorting Visualizer</h5>
-					<p class="card-text">This Web app can visually show the pattern of a variety of popular sorting
-						algorithms. (Under production)</p>
-					<div class="d-inline-flex" style="margin-top: 85px;">
-						<a href="https://github.com/Dharaneeshwar/Sorting-Visualizer"><i class="fab fa-github iconhover"
-								style="font-size: 25px;"></i></a>
-					</div>
 
-				</div>
+			</div>
+		</div>
+		<div class="card m-2 hovercard" data-aos="fade-up" style="width: 20rem;">
+			<div class="imgbox">
+				<img src="/ProjectThumbnails/Covid App.png" class="card-img-top" alt="...">
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">Covid-19 Hackathon (App)</h5>
+				<p class="card-text">This is an Android app built for the Covid-19 National Bio-Informatics Online
+					Hackathon for Full Stackers.</p>
+				<div class="d-inline-flex" style="margin-top: 85px;">
+					<a href="https://github.com/Covid19-project-hack/TN-COVID-19-Project"><i
+							class="fab fa-github iconhover" style="font-size: 25px;"></i></a>
+				</div><br>
 			</div>
 		</div>
 
+		<div class="card m-2 hovercard" data-aos="fade-up" style="width: 20rem;">
+			<div class="imgbox">
+				<img src="/ProjectThumbnails/Coming Soon.jpg" class="card-img-top" alt="...">
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">Sorting Visualizer</h5>
+				<p class="card-text">This Web app can visually show the pattern of a variety of popular sorting
+					algorithms. (Under production)</p>
+				<div class="d-inline-flex" style="margin-top: 85px;">
+					<a href="https://github.com/Dharaneeshwar/Sorting-Visualizer"><i class="fab fa-github iconhover"
+							style="font-size: 25px;"></i></a>
+				</div>
+
+			</div>
+		</div>
+	</div>
 	</section>
 	<!-- coding -->
 	<section class="mt-5 pt-5">
